@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS 
+           #  = id
+           .  = class
+           :: = pseudo-class
+           >  = clildren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a::after{
+            content: '[link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/RafaelFelipe007/repositorio" target="_blank" >Repositorio Github</a></li>
+        <li><a href="https://www.instagram.com/rafael.felipe.o" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/rafaelfelipeo/ " target="_blank">Linkedln</a></li>
+    </ul>
+    
+</body>
+</html>
